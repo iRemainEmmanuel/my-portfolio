@@ -23,7 +23,7 @@ const Home = () => {
               transition={{ duration: 0.5, delay: 0.0 }}
               className="section-tag"
             >
-              Hello World!
+              Hello everyone!
             </motion.span>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
