@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles */
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-header {
+    @apply text-center mb-8 sm:mb-12 md:mb-16;
+  }
+
+  .section-title {
+    @apply text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-gray-300 text-base sm:text-lg;
+  }
+
+  .section-tag {
+    @apply inline-block bg-white/10 text-[#00ff88] text-sm font-semibold px-3 py-1 rounded-full mb-4;
+  }
+
+  .section-title-underline {
+    @apply w-16 h-1 bg-[#00ff88] mx-auto mt-4;
+  }
+
+  .card {
+    @apply p-4 sm:p-6 bg-white/5 rounded-lg border border-white/10;
+  }
+
+  .project-card {
+    @apply p-4 sm:p-6 bg-white/5 rounded-lg border border-white/10;
+  }
+
+  .achievement-card {
+    @apply p-4 sm:p-6 bg-white/5 rounded-lg border border-white/10;
+  }
+
+  .btn-primary {
+    @apply px-4 sm:px-6 py-2 sm:py-3 bg-[#00ff88] text-black font-semibold rounded-lg transition-all duration-300 text-sm sm:text-base border border-[#00ff88] hover:bg-transparent hover:text-[#00ff88] hover:shadow-[0_0_25px_rgba(0,255,136,0.5)] transform hover:-translate-y-1;
+  }
+
+  .btn-secondary {
+    @apply px-4 sm:px-6 py-2 sm:py-3 bg-white/5 text-white font-semibold rounded-lg transition-all duration-300 text-sm sm:text-base border border-white/20 hover:bg-white/10 hover:border-white/40 hover:shadow-[0_0_25px_rgba(255,255,255,0.1)] transform hover:-translate-y-1;
+  }
+
+  .hover-lift {
+    @apply hover:-translate-y-1 transition-transform duration-300;
+  }
+
+  .hover-glow {
+    @apply hover:shadow-[0_0_20px_rgba(0,255,136,0.3)] transition-shadow duration-300;
+  }
+}
+
+/* Grid Background */
+.grid-bg {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444444;
+}
+
+/* Animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .container {
+    @apply px-4;
+  }
+  
+  .section-header {
+    @apply mb-6;
+  }
+  
+  .section-title {
+    @apply text-2xl;
+  }
+  
+  .section-subtitle {
+    @apply text-sm;
+  }
+  
+  .card, .project-card, .achievement-card {
+    @apply p-4;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    @apply text-3xl;
+  }
+
+  .section-subtitle {
+    @apply text-base;
+  }
+  
+  .btn-primary, .btn-secondary {
+    @apply w-full;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    @apply px-6;
+  }
+}
