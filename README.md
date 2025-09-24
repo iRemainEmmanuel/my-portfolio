@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Emmanuel Mwamba's Portfolio Website
 
 A modern, responsive portfolio website built with React, Tailwind CSS, and Framer Motion.
@@ -86,3 +87,6 @@ npm run build
 
 ## License
 MIT
+=======
+# EmmanuelMwamba.github.io
+>>>>>>> 032622b35352595355188772aa7dd38b1743593e
