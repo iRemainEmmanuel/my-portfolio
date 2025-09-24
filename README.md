@@ -84,8 +84,4 @@ npm run build
 - Vite
 - TypeScript
 
-## License
-MIT
-=======
-# EmmanuelMwamba.github.io
->>>>>>> 032622b35352595355188772aa7dd38b1743593e
+
