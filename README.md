@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Emmanuel Mwamba's Portfolio Website
 
 A modern, responsive portfolio website built with React, Tailwind CSS, and Framer Motion.
