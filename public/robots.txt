@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://mwambae.vercel.app/sitemap.xml
+Sitemap: https://www.mwambae.me/sitemap.xml
 
 # Disallow crawling of any private or admin routes
 Disallow: /admin/
