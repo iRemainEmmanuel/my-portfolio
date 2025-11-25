@@ -22,8 +22,8 @@ const Projects = () => {
     },
     {
       id: 'portfolio-2',
-      title: 'Website for EICTA Technologies Ltd.',
-      description: 'A professional corporate website showcasing EICTA Technologies Ltd services, expertise, and client success stories. Built with React.js and Node.js for optimal performance.',
+      title: 'Website for EICTA Technologies',
+      description: 'A professional corporate website showcasing EICTA Technologies services, expertise, and client success stories. Built with React.js and Node.js for optimal performance.',
       image: '/images/project2.png',
       technologies: ['React.js', 'Node.js', 'Tailwind CSS', 'Framer Motion'],
       github: '',

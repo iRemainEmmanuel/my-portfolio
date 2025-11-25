@@ -14,7 +14,7 @@ const Qualifications = () => {
       title: 'Professional Experience',
       content: `
       <ul class="list-disc list-inside space-y-2">
-        <p><strong>EICTA Technologies Ltd.</strong> | Founder, CEO & Software Engineer</strong></p>
+        <p><strong>EICTA Technologies</strong> | Founder, CEO & Software Engineer</strong></p>
         <p class="ml-4">23<sup>rd</sup> April, 2024 – Present</p>
         <li class="ml-4">Leads the development of scalable web and mobile applications, integrating modern technologies to meet diverse client needs.</li>
         <li class="ml-4">Oversees business strategy, project management, and client acquisition, driving the company’s growth and innovation.</li>
@@ -37,7 +37,7 @@ const Qualifications = () => {
        <br />
       <ul class="list-disc list-inside space-y-2">
         <p><strong>Codveda Technologies </strong> | Web Development Intern</strong></p>
-        <p class="ml-4">14<sup>th</sup> September, 2025 – Present</p>
+        <p class="ml-4">14<sup>th</sup> September, 2025 – 14<sup>th</sup> October, 2025</p>
         <li class="ml-4">Gained practical experience in front-end and back-end web development during a structured one-month internship.</li>
         <li class="ml-4">Assisted in building responsive and user-friendly web pages using HTML, CSS, JavaScript, and React.js.</li>
         <li class="ml-4">Collaborated on real-world projects, contributing to code development, testing, and deployment.</li>
