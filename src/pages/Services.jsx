@@ -107,29 +107,29 @@ What to Expect
 Additional Info
 This service is great for solopreneurs, brands, churches, and creators. Let me handle the content so you can focus on your mission.`,
     },
-    {
-      icon: PaintBrushIcon,
-      title: 'Graphic Design',
-      description: 'Designing impactful graphics and brand materials for digital and print to enhance brand communication and presence.',
-      details: `
-Overview
-I provide custom graphics that represent your brand beautifully — both digitally and in print.
+//     {
+//       icon: PaintBrushIcon,
+//       title: 'Graphic Design',
+//       description: 'Designing impactful graphics and brand materials for digital and print to enhance brand communication and presence.',
+//       details: `
+// Overview
+// I provide custom graphics that represent your brand beautifully — both digitally and in print.
 
-What’s Included
-- Logo design and brand assets
-- Social media post templates
-- Event flyers, posters, brochures
-- Presentation/pitch deck design
-- Web graphics, banners, and thumbnails
+// What’s Included
+// - Logo design and brand assets
+// - Social media post templates
+// - Event flyers, posters, brochures
+// - Presentation/pitch deck design
+// - Web graphics, banners, and thumbnails
 
-What to Expect
-- Collaborative design process with feedback loops
-- High-resolution and web-optimized exports
-- Source files on delivery (if requested)
+// What to Expect
+// - Collaborative design process with feedback loops
+// - High-resolution and web-optimized exports
+// - Source files on delivery (if requested)
 
-Additional Info
-I design with strategy and intention — not just aesthetics. Every piece aims to represent your values and connect with your audience effectively.`,
-    },
+// Additional Info
+// I design with strategy and intention — not just aesthetics. Every piece aims to represent your values and connect with your audience effectively.`,
+//     },
   ];
 
   // Close modal on outside click

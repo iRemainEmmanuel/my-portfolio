@@ -68,12 +68,12 @@ const Home = () => {
 
       {/* Scroll Indicator */}
       <motion.a
-        href="#about"
+        href="#projects"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.6 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 text-gray-400 hover:text-[#00ff88] transition-colors"
-        aria-label="Scroll to about section"
+        aria-label="Scroll to projects section"
       >
         <ArrowDownIcon className="w-6 h-6 animate-bounce" aria-hidden="true" />
       </motion.a>

@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-xl sm:text-2xl font-bold text-white">Emmanuel</h3>
             <p className="text-gray-400 text-sm sm:text-base">
-              Software Engineer | Web Developer | Tech Innovator | Graphic Designer | Speaker | Strategist | Cybersecurity Enthusiast | Preacher
+              Software Engineer | Web Developer | Tech Innovator | Speaker | Strategist | Cybersecurity Enthusiast | Preacher
             </p>
           </div>
 
@@ -26,13 +26,18 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#about" className="text-gray-400 hover:text-[#00ff88] transition-colors text-sm sm:text-base">
-                  About
+                <a href="#projects" className="text-gray-400 hover:text-[#00ff88] transition-colors text-sm sm:text-base">
+                  Projects
                 </a>
               </li>
               <li>
-                <a href="#projects" className="text-gray-400 hover:text-[#00ff88] transition-colors text-sm sm:text-base">
-                  Projects
+                <a href="#services" className="text-gray-400 hover:text-[#00ff88] transition-colors text-sm sm:text-base">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="#about" className="text-gray-400 hover:text-[#00ff88] transition-colors text-sm sm:text-base">
+                  About
                 </a>
               </li>
               <li>
@@ -67,11 +72,11 @@ const Footer = () => {
                   Social Media Management
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#services" className="text-gray-400 hover:text-[#00ff88] transition-colors text-sm sm:text-base">
                   Graphic Design
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -106,6 +111,9 @@ const Footer = () => {
               © {currentYear} Emmanuel. All rights reserved.
             </p>
             <div className="flex gap-4 sm:gap-6">
+              <a className="text-gray-400 hover:text-[#00ff88] transition-colors text-sm sm:text-base">
+                #GodFearing
+              </a>
               <a className="text-gray-400 hover:text-[#00ff88] transition-colors text-sm sm:text-base">
                 #Developer
               </a>

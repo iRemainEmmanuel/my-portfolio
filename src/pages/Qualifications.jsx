@@ -24,7 +24,7 @@ const Qualifications = () => {
       <hr />
        <br />
       <ul class="list-disc list-inside space-y-2">
-        <p><strong>ShopLink Market </strong> | Founder & CEO</strong></p>
+        <p><strong>ShopLink Market </strong> | Visionary Founder & CEO</strong></p>
         <p class="ml-4">23<sup>rd</sup> May, 2025 – Present</p>
         <li class="ml-4">Leads product innovation and business growth, driving our mission to transform how communities connect and thrive through digital commerce.</li>
         <li class="ml-4">Oversees business strategy, and leading our mission to connect communities through digital commerce.</li>
