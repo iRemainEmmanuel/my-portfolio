@@ -21,21 +21,6 @@ const About = () => {
       description:
         "PHP, MySQL, MariaDB, Node.js, Express.js, Supabase, Firebase",
     },
-    // {
-    //   icon: PaintBrushIcon,
-    //   title: 'Graphic Design',
-    //   description: 'Designing visually appealing graphics and branding elements using tools like Adobe Photoshop and Adobe Illustrator',
-    // },
-    // {
-    //   icon: LightBulbIcon,
-    //   title: 'Backend Development',
-    //   description: 'Node.js, Express, MongoDB, and RESTful API design.',
-    // },
-    // {
-    //   icon: ChartBarIcon,
-    //   title: 'UI/UX Design',
-    //   description: 'Creating intuitive and engaging user experiences with modern design principles.',
-    // },
   ];
 
   return (
@@ -93,14 +78,9 @@ const About = () => {
               viewport={{ once: true }}
               className="text-gray-300"
             >
-              I'm Emmanuel Mwamba, a Software Developer and Startup Founder from
-              Zambia. I build practical digital products and technology
-              solutions focused on solving real-world problems.
+             I'm Emmanuel Mwamba, a Software Developer and Startup Founder. I build practical digital products and technology solutions focused on solving real-world problems.
               <br /> <br />
-              I'm the founder of EICTA Technologies, a Software Development & IT
-              Solutions Company, and I'm currently building ShopLink, an
-              Internet Marketplace Platform connecting customers with local
-              businesses and sellers.
+              I'm the founder of EICTA Technologies, a Software Development, IT & Business Solutions Company. Through EICTA Technologies, I work on practical digital products and technology solutions focused on solving real-world problems.
             </motion.p>
 
             {/* Statistics */}
