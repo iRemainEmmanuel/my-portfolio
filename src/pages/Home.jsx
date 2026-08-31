@@ -1,13 +1,17 @@
-import { motion } from 'framer-motion';
-import { ArrowDownIcon } from '@heroicons/react/24/outline';
+import { motion } from "framer-motion";
+import { ArrowDownIcon } from "@heroicons/react/24/outline";
 
 const Home = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative" aria-label="Home">
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center relative"
+      aria-label="Home"
+    >
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black to-transparent z-10" />
-        <div 
+        <div
           className="absolute top-0 left-0 w-full h-full bg-[url('/src/assets/hero-bg.jpg')] bg-cover bg-center opacity-20"
           role="presentation"
         />
@@ -47,7 +51,10 @@ const Home = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="text-xl text-gray-300 mb-8"
           >
-            A passionate Software Engineering Student, Full Stack Web Developer and Aspiring Full Stack Engineer crafting beautiful and functional web experiences
+            a Software Developer and Startup Founder from Zambia. I build
+            practical digital products and technology solutions focused on
+            solving real-world problems.
+            <br /> 
           </motion.h2>
           <motion.nav
             initial={{ opacity: 0, y: 20 }}
@@ -56,10 +63,18 @@ const Home = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center"
             aria-label="Main navigation"
           >
-            <a href="#contact" className="btn-primary" aria-label="Get in touch">
+            <a
+              href="#contact"
+              className="btn-primary"
+              aria-label="Get in touch"
+            >
               Get in Touch
             </a>
-            <a href="#projects" className="btn-secondary" aria-label="View my work">
+            <a
+              href="#projects"
+              className="btn-secondary"
+              aria-label="View my work"
+            >
               View My Work
             </a>
           </motion.nav>
@@ -81,4 +96,4 @@ const Home = () => {
   );
 };
 
-export default Home; 
+export default Home;

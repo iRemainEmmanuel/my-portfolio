@@ -1,18 +1,25 @@
-import { motion } from 'framer-motion';
-import { UserGroupIcon, LightBulbIcon, ChartBarIcon, PaintBrushIcon } from '@heroicons/react/24/outline';
-import Counter from '../components/Counter';
+import { motion } from "framer-motion";
+import {
+  UserGroupIcon,
+  LightBulbIcon,
+  ChartBarIcon,
+  PaintBrushIcon,
+} from "@heroicons/react/24/outline";
+import Counter from "../components/Counter";
 
 const About = () => {
   const skills = [
     {
       icon: UserGroupIcon,
-      title: 'Frontend Development',
-      description: 'HTML, CSS, JavaScript, React.js, Next.js, Tailwind CSS, Bootstrap.',
+      title: "Frontend Development",
+      description:
+        "HTML, CSS, JavaScript, React.js, Next.js, Tailwind CSS, Bootstrap.",
     },
     {
       icon: LightBulbIcon,
-      title: 'Backend Development & Database',
-      description: 'PHP, MySQL, MariaDB, Node.js, Express.js, Supabase, Firebase',
+      title: "Backend Development & Database",
+      description:
+        "PHP, MySQL, MariaDB, Node.js, Express.js, Supabase, Firebase",
     },
     // {
     //   icon: PaintBrushIcon,
@@ -36,7 +43,9 @@ const About = () => {
       <div className="container">
         <div className="section-header">
           <span className="section-tag">About Me</span>
-          <h2 className="section-title">Get to know more about my journey and expertise</h2>
+          <h2 className="section-title">
+            Get to know more about my journey and expertise
+          </h2>
           <div className="section-title-underline"></div>
         </div>
 
@@ -74,7 +83,8 @@ const About = () => {
               viewport={{ once: true }}
               className="text-3xl font-bold"
             >
-              Passionate about creating digital experiences that make a difference
+              Passionate about creating digital experiences that make a
+              difference
             </motion.h3>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -83,19 +93,28 @@ const About = () => {
               viewport={{ once: true }}
               className="text-gray-300"
             >
-             I'm a Software Enginering Student, Full Stack Web Developer and Aspiring Full Stack Engineer passionate about building beautiful, functional, and user-friendly websites and web apps. I focus on creating seamless digital experiences that effectively solve real-world problems.
+              I'm Emmanuel Mwamba, a Software Developer and Startup Founder from
+              Zambia. I build practical digital products and technology
+              solutions focused on solving real-world problems.
+              <br /> <br />
+              I'm the founder of EICTA Technologies, a Software Development & IT
+              Solutions Company, and I'm currently building ShopLink, an
+              Internet Marketplace Platform connecting customers with local
+              businesses and sellers.
             </motion.p>
 
             {/* Statistics */}
             <div className="grid grid-cols-2 gap-4 text-center">
-            <motion.div
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
                 viewport={{ once: true }}
                 className="p-4 bg-white/5 rounded-lg"
               >
-                <h4 className="text-2xl sm:text-3xl font-bold text-[#00ff88]"><Counter target={100} /></h4>
+                <h4 className="text-2xl sm:text-3xl font-bold text-[#00ff88]">
+                  <Counter target={100} />
+                </h4>
                 <p className="text-sm text-gray-300">Lives Impacted</p>
               </motion.div>
               <motion.div
@@ -105,8 +124,12 @@ const About = () => {
                 viewport={{ once: true }}
                 className="p-4 bg-white/5 rounded-lg"
               >
-                <h4 className="text-2xl sm:text-3xl font-bold text-[#00ff88]"><Counter target={10} /></h4>
-                <p className="text-sm text-gray-300">Entrepreneuers Supported</p>
+                <h4 className="text-2xl sm:text-3xl font-bold text-[#00ff88]">
+                  <Counter target={10} />
+                </h4>
+                <p className="text-sm text-gray-300">
+                  Entrepreneuers Supported
+                </p>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -115,7 +138,9 @@ const About = () => {
                 viewport={{ once: true }}
                 className="p-4 bg-white/5 rounded-lg"
               >
-                <h4 className="text-2xl sm:text-3xl font-bold text-[#00ff88]"><Counter target={5} /></h4>
+                <h4 className="text-2xl sm:text-3xl font-bold text-[#00ff88]">
+                  <Counter target={5} />
+                </h4>
                 <p className="text-sm text-gray-300">Projects Completed</p>
               </motion.div>
               <motion.div
@@ -125,10 +150,12 @@ const About = () => {
                 viewport={{ once: true }}
                 className="p-4 bg-white/5 rounded-lg"
               >
-                <h4 className="text-2xl sm:text-3xl font-bold text-[#00ff88]"><Counter target={3} /></h4>
+                <h4 className="text-2xl sm:text-3xl font-bold text-[#00ff88]">
+                  <Counter target={3} />
+                </h4>
                 <p className="text-sm text-gray-300">Countries Reached</p>
               </motion.div>
-                {/* <motion.div
+              {/* <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
@@ -155,7 +182,9 @@ const About = () => {
                     <skill.icon className="w-6 h-6 text-[#00ff88]" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold mb-2">{skill.title}</h4>
+                    <h4 className="text-lg font-semibold mb-2">
+                      {skill.title}
+                    </h4>
                     <p className="text-gray-300 text-sm">{skill.description}</p>
                   </div>
                 </motion.div>
@@ -168,4 +197,4 @@ const About = () => {
   );
 };
 
-export default About; 
+export default About;

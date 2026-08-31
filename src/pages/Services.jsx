@@ -1,11 +1,11 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import {
+  CodeBracketIcon,
   WrenchScrewdriverIcon,
-  DeviceTabletIcon,
-  PaintBrushIcon,
-  ChatBubbleLeftEllipsisIcon,
-  SparklesIcon,
+  ServerStackIcon,
+  Cog6ToothIcon,
+  DocumentCheckIcon,
 } from '@heroicons/react/24/outline';
 
 const Services = () => {
@@ -14,122 +14,140 @@ const Services = () => {
 
   const servicesData = [
     {
+      icon: CodeBracketIcon,
+      title: 'Software Development',
+      description:
+        'Developing custom software and digital products that solve specific business problems and improve how businesses operate.',
+      details: `
+Overview
+I develop custom software and digital products designed around specific problems, workflows, and business requirements. The goal is to create practical systems that make work easier, improve efficiency, and provide room for future growth.
+
+What’s Included
+- Custom web-based software development
+- Business management systems and dashboards
+- SaaS and MVP development
+- Database design and integration
+- Authentication and user management
+- API and third-party service integrations
+
+What to Expect
+- A solution designed around your requirements
+- Scalable technical architecture
+- Practical and user-friendly interfaces
+- Development, testing, and deployment support
+- A foundation that can evolve as your needs grow
+
+Additional Info
+Ideal for businesses, entrepreneurs, and founders looking to turn an idea, manual process, or business requirement into a functional digital product.`,
+    },
+    {
       icon: WrenchScrewdriverIcon,
       title: 'Web Development',
-      description: 'Building responsive and scalable websites and applications using contemporary technologies to ensure robust performance and maintainability.',
+      description:
+        'Building modern, responsive websites and web applications that are fast, scalable, and designed around real business needs.',
       details: `
 Overview
-I build fast, responsive, and scalable websites and web apps tailored to your needs. Whether you're an entrepreneur, business, or personal brand, I help bring your digital vision to life.
+I build modern websites and web applications that are responsive, reliable, and tailored to real business and user needs. From business websites to SaaS platforms and MVPs, I focus on creating digital experiences that are practical, scalable, and easy to maintain.
 
 What’s Included
-- Full-stack development with React, Next.js, Tailwind, Supabase, Node.js
-- Mobile-friendly, accessible interfaces
-- Integration with Firebase, third-party APIs, and CMS platforms
-- Performance optimization and SEO-friendly code
-- Git-based collaboration & modern workflows
+- Responsive website and web application development
+- Modern frontend development with React, Next.js, and Tailwind CSS
+- Backend and database integration
+- Firebase and third-party API integrations
+- Performance optimization and SEO-friendly development
+- Git-based development and modern deployment workflows
 
 What to Expect
-- Custom UI/UX design and consultation
-- Scalable architecture from day one
-- Testing, debugging, and deployment setup
-- Ongoing support and guidance post-launch
+- A solution built around your specific goals
+- Clean, maintainable, and scalable code
+- Mobile-friendly and accessible interfaces
+- Testing, debugging, and deployment support
+- Guidance throughout the development process
 
 Additional Info
-Ideal for portfolios, business sites, SaaS apps, and MVPs. Every site is tailored, clean-coded, and designed to grow with your brand.`,
+Ideal for business websites, portfolios, landing pages, SaaS platforms, dashboards, and MVPs. Each project is built with usability, performance, and future growth in mind.`,
     },
     {
-      icon: DeviceTabletIcon,
-      title: 'IT Consulting',
-      description: 'Providing strategic technical guidance to facilitate effective digital transformation and optimize technology solutions.',
+      icon: ServerStackIcon,
+      title: 'IT Solutions',
+      description:
+        'Helping businesses implement practical technology solutions that improve their day-to-day operations, connectivity, and digital workflows.',
       details: `
 Overview
-I offer personalized technical consulting services to help individuals, startups, and growing businesses make the right digital decisions.
+I help businesses identify and implement practical technology solutions that support their everyday operations. This can include setting up digital tools, improving workflows, and helping businesses make better use of the technology they already have.
 
 What’s Included
-- Systems design & technical architecture
-- Tech stack selection based on goals and budget
-- Cloud infrastructure recommendations (e.g., AWS, Vercel, Supabase)
-- Team structuring, tooling, and best practices
-- Cybersecurity and data handling consultations
+- Business technology setup and configuration
+- Digital tools and software implementation
+- Connectivity and network-related solutions
+- System and workflow recommendations
+- Technology troubleshooting and support
+- Integration of tools used in day-to-day operations
 
 What to Expect
-- 1-on-1 consultation calls (Zoom or WhatsApp)
-- Clear, jargon-free recommendations
-- Documentation & tech roadmap
-- Follow-up support as needed
+- Practical solutions based on your actual needs
+- Clear guidance without unnecessary complexity
+- Technology recommendations suited to your goals and budget
+- Support with implementation and setup
+- Solutions focused on reliability and usability
 
 Additional Info
-Best for founders, non-tech entrepreneurs, or teams scaling digital operations. I simplify the complex and provide real-world solutions you can act on.`,
+Ideal for small businesses and organizations that need practical help with their technology, digital tools, systems, and everyday workflows.`,
     },
     {
-      icon: SparklesIcon,
-      title: 'Branding Consultation',
-      description: 'Defining and refining brand identity, messaging, and positioning to establish a consistent and impactful market presence.',
+      icon: Cog6ToothIcon,
+      title: 'Business Automation',
+      description:
+        'Turning repetitive business processes into streamlined digital workflows that save time, reduce manual work, and improve efficiency.',
       details: `
 Overview
-Strong branding helps you connect with your audience. I help you clarify and refine your brand voice, visuals, and message for consistency across platforms.
+I help businesses reduce repetitive manual work by turning everyday processes into streamlined digital workflows. From automating routine tasks to connecting different tools and systems, the focus is on making business operations simpler and more efficient.
 
 What’s Included
-- Brand audit: logo, colors, typography, voice
-- Visual identity system & moodboard creation
-- Messaging refinement for clarity and consistency
-- Brand style guide recommendations
-- Competitive landscape review
+- Workflow automation
+- Digital forms and data collection
+- Automated notifications and communication
+- System and tool integrations
+- Data organization and management
+- Custom automation solutions for repetitive processes
 
 What to Expect
-- Deep-dive session about your brand goals
-- Visual references and alignment feedback
-- Suggestions you can implement or have me design
+- Identification of processes that can be improved
+- Practical automation recommendations
+- Workflows designed around how your business operates
+- Reduced repetitive and manual tasks
+- Solutions that can scale alongside your operations
 
 Additional Info
-Ideal for small businesses, influencers, and creatives looking to upgrade their online presence and build audience trust through a consistent identity.`,
+Ideal for businesses that spend too much time on repetitive tasks, manual data entry, follow-ups, record keeping, or processes that could be handled more efficiently with technology.`,
     },
     {
-      icon: ChatBubbleLeftEllipsisIcon,
-      title: 'Social Media Management',
-      description: 'Delivering strategic oversight and execution of social media initiatives to enhance brand visibility and audience engagement.',
-      details: `
+  icon: DocumentCheckIcon,
+  title: 'Business Registration & Compliance',
+  description:
+    'Helping entrepreneurs and businesses navigate registration and compliance processes so they can establish and operate their businesses with confidence.',
+  details: `
 Overview
-I manage your social media presence to build engagement, grow reach, and keep your brand voice consistent.
+I assist entrepreneurs and businesses with practical business registration and compliance processes, helping simplify the steps involved in formally establishing and maintaining a business.
 
 What’s Included
-- Content planning and post scheduling
-- Captions, hashtags, and branded templates
-- Graphic creation and reels/snippets (as needed)
-- Monthly performance reporting
-- Engagement and inbox management (on request)
+- PACRA business registration assistance
+- Business name and company registration guidance
+- TPIN registration assistance
+- Tax registration and compliance guidance
+- NAPSA registration assistance
+- General business compliance support
 
 What to Expect
-- Strategy session to understand your goals
-- Calendar-based scheduling for consistency
-- Transparent results tracking
+- Clear guidance through the registration process
+- Assistance with required documentation
+- Help understanding the steps and requirements
+- Practical support from registration to compliance
+- A simpler process without unnecessary confusion
 
 Additional Info
-This service is great for solopreneurs, brands, churches, and creators. Let me handle the content so you can focus on your mission.`,
-    },
-//     {
-//       icon: PaintBrushIcon,
-//       title: 'Graphic Design',
-//       description: 'Designing impactful graphics and brand materials for digital and print to enhance brand communication and presence.',
-//       details: `
-// Overview
-// I provide custom graphics that represent your brand beautifully — both digitally and in print.
-
-// What’s Included
-// - Logo design and brand assets
-// - Social media post templates
-// - Event flyers, posters, brochures
-// - Presentation/pitch deck design
-// - Web graphics, banners, and thumbnails
-
-// What to Expect
-// - Collaborative design process with feedback loops
-// - High-resolution and web-optimized exports
-// - Source files on delivery (if requested)
-
-// Additional Info
-// I design with strategy and intention — not just aesthetics. Every piece aims to represent your values and connect with your audience effectively.`,
-//     },
+Ideal for entrepreneurs, startups, and small businesses looking to formalize their operations or get help navigating business registration and basic compliance requirements. Services are provided as administrative and process assistance and do not constitute legal or tax advice.`,
+},
   ];
 
   // Close modal on outside click
@@ -148,14 +166,25 @@ This service is great for solopreneurs, brands, churches, and creators. Let me h
   }, [activeService]);
 
   return (
-    <section id="services" className="min-h-screen bg-black py-16 md:py-24 lg:py-32 text-white">
+    <section
+      id="services"
+      className="min-h-screen bg-black py-16 md:py-24 lg:py-32 text-white"
+    >
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <span className="text-[#00ff88] uppercase tracking-widest font-medium text-sm">What I Do</span>
-          <h2 className="text-3xl md:text-4xl font-bold mt-2">My Services</h2>
+          <span className="text-[#00ff88] uppercase tracking-widest font-medium text-sm">
+            What I Do
+          </span>
+
+          <h2 className="text-3xl md:text-4xl font-bold mt-2">
+            My Services
+          </h2>
+
           <div className="mx-auto mt-2 w-20 h-1 bg-[#00ff88] rounded"></div>
+
           <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
-            I'm passionate about helping businesses and individuals bring their visions to life through beautiful, functional, and user-friendly digital experiences.
+            Practical digital solutions designed to help businesses work
+            smarter, operate better, and grow.
           </p>
         </div>
 
@@ -172,8 +201,15 @@ This service is great for solopreneurs, brands, churches, and creators. Let me h
               <div className="bg-[#00ff88]/10 p-4 rounded-full w-fit mx-auto mb-5">
                 <service.icon className="h-8 w-8 text-[#00ff88]" />
               </div>
-              <h3 className="text-xl font-semibold text-center mb-3">{service.title}</h3>
-              <p className="text-gray-300 text-sm text-center">{service.description}</p>
+
+              <h3 className="text-xl font-semibold text-center mb-3">
+                {service.title}
+              </h3>
+
+              <p className="text-gray-300 text-sm text-center">
+                {service.description}
+              </p>
+
               <div className="mt-4 flex justify-center">
                 <button
                   onClick={() => setActiveService(service)}
@@ -196,20 +232,29 @@ This service is great for solopreneurs, brands, churches, and creators. Let me h
               <button
                 onClick={() => setActiveService(null)}
                 className="absolute top-4 right-5 text-gray-400 hover:text-white text-2xl"
+                aria-label="Close"
               >
                 &times;
               </button>
+
               <div className="flex items-center gap-4 mb-4">
                 <div className="bg-[#00ff88]/10 p-3 rounded-full">
                   <activeService.icon className="w-7 h-7 text-[#00ff88]" />
                 </div>
-                <h3 className="text-2xl font-bold">{activeService.title}</h3>
+
+                <h3 className="text-2xl font-bold">
+                  {activeService.title}
+                </h3>
               </div>
+
               <pre className="text-gray-300 text-sm leading-relaxed mb-6 whitespace-pre-wrap">
                 {activeService.details}
               </pre>
+
               <a
-                href={`https://wa.me/260966271989?text=Hi%20Emmanuel%2C%20I'm%20interested%20in%20your%20${encodeURIComponent(activeService.title)}%20service.%20Can%20you%20tell%20me%20more%3F`}
+                href={`https://wa.me/260966271989?text=Hi%20Emmanuel%2C%20I'm%20interested%20in%20your%20${encodeURIComponent(
+                  activeService.title
+                )}%20service.%20Can%20you%20tell%20me%20more%3F`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-[#00ff88] text-black px-5 py-2 rounded hover:bg-[#00ff88]/90 transition font-medium"

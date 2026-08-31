@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-xl sm:text-2xl font-bold text-white">Emmanuel</h3>
             <p className="text-gray-400 text-sm sm:text-base">
-              Software Engineer | Web Developer | Tech Innovator | Speaker | Strategist | Cybersecurity Enthusiast | Preacher
+             Software Developer | Startup Founder | Building Practical Technology Solutions
             </p>
           </div>
 
@@ -54,22 +54,27 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a href="#services" className="text-gray-400 hover:text-[#00ff88] transition-colors text-sm sm:text-base">
+                  Software Development
+                </a>
+              </li>
+              <li>
+                <a href="#services" className="text-gray-400 hover:text-[#00ff88] transition-colors text-sm sm:text-base">
                   Web Development
                 </a>
               </li>
               <li>
                 <a href="#services" className="text-gray-400 hover:text-[#00ff88] transition-colors text-sm sm:text-base">
-                  IT Consultating
+                  IT Solutions
                 </a>
               </li>
               <li>
                 <a href="#services" className="text-gray-400 hover:text-[#00ff88] transition-colors text-sm sm:text-base">
-                  Braning Consultation
+                  Business Automation
                 </a>
               </li>
               <li>
                 <a href="#services" className="text-gray-400 hover:text-[#00ff88] transition-colors text-sm sm:text-base">
-                  Social Media Management
+                 Business Registration & Compliance
                 </a>
               </li>
               {/* <li>
