@@ -51,7 +51,7 @@ const Home = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="text-xl text-gray-300 mb-8"
           >
-            a Software Developer and Startup Founder from Zambia. I build
+            a Software Developer and Startup Founder. I build
             practical digital products and technology solutions focused on
             solving real-world problems.
             <br /> 

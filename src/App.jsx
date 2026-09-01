@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Services from './pages/Services';
+import Qualifications from './pages/Qualifications';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
@@ -33,9 +34,10 @@ function App() {
         <Navbar />
         <main>
           <Home />
+          <About />
+          <Qualifications />
           <Projects />
           <Services />
-          <About />
           {/* <Blog /> */}
           <Contact />
         </main>

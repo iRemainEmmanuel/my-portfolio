@@ -215,7 +215,7 @@ Ideal for entrepreneurs, startups, and small businesses looking to formalize the
                   onClick={() => setActiveService(service)}
                   className="text-[#00ff88] text-sm font-medium underline hover:no-underline"
                 >
-                  See More
+                  Read More
                 </button>
               </div>
             </motion.div>

@@ -26,6 +26,16 @@ const Footer = () => {
                 </a>
               </li>
               <li>
+                <a href="#about" className="text-gray-400 hover:text-[#00ff88] transition-colors text-sm sm:text-base">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#qualifications" className="text-gray-400 hover:text-[#00ff88] transition-colors text-sm sm:text-base">
+                  Qualifications
+                </a>
+              </li>
+              <li>
                 <a href="#projects" className="text-gray-400 hover:text-[#00ff88] transition-colors text-sm sm:text-base">
                   Projects
                 </a>
@@ -33,11 +43,6 @@ const Footer = () => {
               <li>
                 <a href="#services" className="text-gray-400 hover:text-[#00ff88] transition-colors text-sm sm:text-base">
                   Services
-                </a>
-              </li>
-              <li>
-                <a href="#about" className="text-gray-400 hover:text-[#00ff88] transition-colors text-sm sm:text-base">
-                  About
                 </a>
               </li>
               <li>
