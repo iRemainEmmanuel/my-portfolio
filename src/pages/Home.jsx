@@ -82,16 +82,37 @@ const Home = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <motion.a
-        href="#projects"
+      <motion.button
+        type="button"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.6 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-gray-400 hover:text-[#00ff88] transition-colors"
-        aria-label="Scroll to projects section"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 text-gray-400 hover:text-[#00ff88] transition-colors bg-transparent border-none cursor-pointer"
+        aria-label="Scroll to about section"
+        onClick={() => {
+          const target = document.querySelector('#about');
+          if (!target) return;
+          const startPosition = window.pageYOffset;
+          const startPositionTarget = target.getBoundingClientRect().top + startPosition;
+          const startTime = performance.now();
+          const delay = 200;
+          const duration = 1800;
+
+          setTimeout(() => {
+            const animateScroll = (currentTime) => {
+              const elapsed = currentTime - startTime - delay;
+              const progress = Math.min(elapsed / duration, 1);
+              const easeInOut = (t) => t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+              const easedProgress = easeInOut(progress);
+              window.scrollTo(0, startPosition + (startPositionTarget - startPosition) * easedProgress);
+              if (progress < 1) requestAnimationFrame(animateScroll);
+            };
+            requestAnimationFrame(animateScroll);
+          }, delay);
+        }}
       >
         <ArrowDownIcon className="w-6 h-6 animate-bounce" aria-hidden="true" />
-      </motion.a>
+      </motion.button>
     </section>
   );
 };
