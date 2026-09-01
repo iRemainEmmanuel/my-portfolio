@@ -87,7 +87,7 @@ const Home = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.6 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 text-gray-400 hover:text-[#00ff88] transition-colors bg-transparent border-none cursor-pointer"
+        className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 z-30 text-gray-400 hover:text-[#00ff88] transition-colors bg-transparent border-none cursor-pointer"
         aria-label="Scroll to about section"
         onClick={() => {
           const target = document.querySelector('#about');
