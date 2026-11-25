@@ -6,7 +6,7 @@ import { FadeIn } from '@/components/motion/motion-primitives';
 export const metadata = {
   title: 'Events',
   description:
-    'Professional experiences and innovation milestones by Emmanuel Mwamba — BongoHive IGNITE RoadShow and ZICTA ICT Innovation Programme.',
+    'Professional experiences and innovation milestones by Emmanuel Mwamba, including the NDCCI Capacity Building Conference, BongoHive IGNITE RoadShow, and ZICTA ICT Innovation Programme.',
 };
 
 export default function EventsPage() {

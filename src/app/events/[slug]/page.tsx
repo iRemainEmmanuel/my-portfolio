@@ -13,8 +13,9 @@ export function generateStaticParams() {
   return events.map((event) => ({ slug: event.id }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const event = events.find((e) => e.id === params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const event = events.find((e) => e.id === slug);
   return event
     ? {
         title: event.name,
@@ -23,8 +24,9 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
     : { title: 'Event' };
 }
 
-export default function EventDetailPage({ params }: { params: { slug: string } }) {
-  const event = events.find((e) => e.id === params.slug);
+export default async function EventDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const event = events.find((e) => e.id === slug);
 
   if (!event) notFound();
 
@@ -161,7 +163,7 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
           )}
         </ScaleReveal>
 
-        {/* 02 · Overview — About the programme */}
+        {/* 02 · Overview: About the programme */}
         <FadeIn className="mt-20">
           <section>
             <div className="grid grid-cols-1 lg:grid-cols-[0.72fr_1.28fr] border-t border-border">

@@ -112,7 +112,7 @@ export const events: Event[] = [
     participationTitle: 'My experience',
     participationContent: [
       'The conference was an opportunity to learn from people actively involved in business development and the wider Zambian business ecosystem.',
-      "One of the most important lessons I took away, particularly from Dr. Rozious Siatwambo's presentation, was the importance of understanding the numbers behind a business and building reliable business systems. Business growth should not be based on guesswork — it requires financial clarity, strong business systems, proper structure and informed decision-making.",
+      "One of the most important lessons I took away, particularly from Dr. Rozious Siatwambo's presentation, was the importance of understanding the numbers behind a business and building reliable business systems. Business growth should not be based on guesswork. It requires financial clarity, strong business systems, proper structure and informed decision-making.",
       'I also valued the opportunity to connect with entrepreneurs, professionals and other business builders working towards strengthening the local business community.',
     ],
     takeawaysLabel: 'Reflections',

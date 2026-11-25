@@ -33,11 +33,11 @@ export default function ShopLinkMarketPage() {
                 ShopLink Market
               </h1>
               <p className="text-sm sm:text-base text-muted uppercase tracking-wider mb-6">
-                SaaS marketplace
+                SaaS Internet Marketplace
               </p>
               <p className="text-lg sm:text-xl text-text/90 leading-relaxed mb-10 max-w-2xl">
                 A SaaS internet marketplace connecting vendors and customers through product and
-                service listings. In development — not yet launched.
+                service listings. In development, not yet launched.
               </p>
             </FadeIn>
 
@@ -65,7 +65,7 @@ export default function ShopLinkMarketPage() {
                   My role
                 </h2>
                 <p className="text-sm sm:text-base text-muted leading-relaxed">
-                  Founder and product lead — product design and development.
+                  Founder and product lead: product design and development.
                 </p>
               </StaggerItem>
             </StaggerGroup>

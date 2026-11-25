@@ -51,7 +51,7 @@ export default function ApostleKimRemuelPage() {
           <header className="grid grid-cols-1 lg:grid-cols-[0.72fr_1.28fr] border-t border-border">
             <div className="py-8 lg:pr-10 lg:border-r border-border">
               <p className="text-[11px] font-bold tracking-widest text-accent mb-6 uppercase">
-                In development · Pro bono project
+                In development · Independent build
               </p>
               <p className="label">Web Development · Custom Software Solutions</p>
               <p className="mt-16 hidden lg:block text-[10px] font-bold uppercase tracking-[0.35em] text-muted [writing-mode:vertical-rl] rotate-180">
@@ -87,14 +87,14 @@ export default function ApostleKimRemuelPage() {
               <div>
                 <p className="text-[10px] font-bold uppercase tracking-widest text-accent mb-4">Project identity</p>
                 <dl className="space-y-5 text-sm">
-                  <div><dt className="text-muted">Client</dt><dd className="mt-1 font-semibold text-text">Apostle Kim Remuel Ministries</dd></div>
-                  <div><dt className="text-muted">Project type</dt><dd className="mt-1 font-semibold text-text">Ministry website and management platform</dd></div>
+                  <div><dt className="text-muted">Ministry</dt><dd className="mt-1 font-semibold text-text">Apostle Kim Remuel Ministries</dd></div>
+                  <div><dt className="text-muted">Project type</dt><dd className="mt-1 font-semibold text-text">Personal ministry website and booking/appointment system</dd></div>
                   <div><dt className="text-muted">My role</dt><dd className="mt-1 font-semibold text-text">Full-stack Developer</dd></div>
                   <div><dt className="text-muted">Status</dt><dd className="mt-1 font-semibold text-accent">Currently in development</dd></div>
                 </dl>
               </div>
               <p className="mt-8 border-t border-border pt-5 text-xs text-muted leading-relaxed">
-                A pro bono project developed for Apostle Kim Remuel Ministries.
+                Independently developed for Apostle Kim Remuel Ministries as a ministry-focused digital solution.
               </p>
             </div>
           </div>
@@ -104,14 +104,14 @@ export default function ApostleKimRemuelPage() {
           <section className="grid grid-cols-1 lg:grid-cols-[0.72fr_1.28fr] border-t border-border">
             <div className="py-8 lg:pr-10 lg:border-r border-border">
               <p className="label mb-3">Project overview</p>
-              <h2 className="font-display text-3xl sm:text-4xl font-bold text-text">More than a church website</h2>
+              <h2 className="font-display text-3xl sm:text-4xl font-bold text-text">More than a personal website</h2>
             </div>
             <div className="py-8 lg:pl-12 space-y-5 border-t lg:border-t-0 border-border">
               <p className="max-w-3xl text-base text-muted leading-relaxed">
-                Apostle Kim Remuel Ministries is a custom-developed ministry website and management system created to bring the ministry&apos;s online presence and essential administrative activities into one connected platform.
+                Apostle Kim Remuel Ministries is a custom-developed personal ministry website and booking/appointment system created to bring the ministry&apos;s online presence, appointment bookings and essential administrative activities into one connected platform.
               </p>
               <p className="max-w-3xl text-base text-muted leading-relaxed">
-                Beyond a conventional ministry website, the project combines public-facing pages with authenticated user accounts, appointment requests, ministry resources and administrative management tools.
+                Beyond a standard personal website, the project combines public-facing pages with authenticated user accounts, booking and appointment requests, ministry resources and administrative management tools.
               </p>
               <p className="max-w-3xl text-base text-muted leading-relaxed">
                 The goal is to provide an accessible digital experience for visitors and a more organised way for the ministry to manage its online activities.
@@ -195,9 +195,9 @@ export default function ApostleKimRemuelPage() {
         </FadeIn>
 
         <FadeIn className="mt-20 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 border-t border-border pt-8">
-          <p className="text-sm text-muted">Currently in development · Pro bono project</p>
+          <p className="text-sm text-muted">Independently developed for Apostle Kim Remuel Ministries · Currently in development</p>
           <a
-            href="https://apostlekimremuel.com"
+            href="https://apostlekimremuel.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-3 px-7 py-4 bg-accent text-[#090909] text-sm font-bold uppercase tracking-wider hover:bg-accent-hover transition-colors"

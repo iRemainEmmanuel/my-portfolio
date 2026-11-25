@@ -38,17 +38,17 @@ export const projects: Project[] = [
   {
     id: 'apostle-kim-remuel',
     name: 'Apostle Kim Remuel Ministry Website',
-    category: 'Ministry Website & Appointment System',
+    category: 'Personal Ministry Website & Booking System',
     description:
-      'A digital platform designed to give a ministry an official online presence and manage appointment requests and ministry-related services.',
+      'A personal ministry website and booking/appointment system designed to establish an official online presence and manage appointment requests and ministry-related services.',
     status: 'In development',
     statusDetail: 'Independently developed for Apostle Kim Remuel Ministries as a ministry-focused digital solution.',
     contribution: 'Full-stack application architecture, product design, development and deployment planning.',
     role: 'Full-stack developer',
     problem:
-      'Ministries need a professional online presence to share their message and manage appointment requests from their congregation.',
+      'Personal ministries need a clear online presence to share their message, publish resources and manage booking and appointment requests without manual coordination.',
     solution:
-      'A connected ministry website and appointment management platform with public content, member services and protected administrative workflows.',
+      'A connected personal ministry website and booking/appointment platform with public content, member services and protected administrative workflows.',
     link: 'https://apostlekimremuel.vercel.app/',
     github: undefined,
     image: '/images/projects/apostle-kim-remuel.png',
@@ -56,7 +56,7 @@ export const projects: Project[] = [
   {
     id: 'shoplink-market',
     name: 'ShopLink Market',
-    category: 'SaaS marketplace',
+    category: 'SaaS Internet Marketplace',
     description:
       'A SaaS internet marketplace connecting vendors and customers through product and service listings. In development | not yet launched.',
     status: 'In development',

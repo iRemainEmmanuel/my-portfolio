@@ -12,7 +12,12 @@ node_modules
 .next-dev
 dist
 dist-ssr
+# Environment variables
+.env.local
+.env*.local
 *.local
+
+*.tsbuildinfo
 
 # Editor directories and files
 .vscode/*
@@ -26,5 +31,3 @@ dist-ssr
 *.sw?
 
 .vercel
-
-.tsbuildinfo

@@ -1,6 +1,8 @@
+import { Suspense } from 'react';
 import Link from 'next/link';
 import { Github, Linkedin, X } from 'lucide-react';
 import { FadeIn } from '@/components/motion/motion-primitives';
+import { ContactForm } from '@/components/contact/contact-form';
 
 export const metadata = {
   title: 'Contact',
@@ -51,69 +53,9 @@ export default function ContactPage() {
         </div>
 
         <FadeIn immediate delay={0.05}>
-          <h1 className="font-display text-4xl sm:text-5xl font-bold text-text mb-6 leading-tight">
-            Have a project, idea or opportunity in mind?
-          </h1>
-          <p className="text-lg text-muted leading-relaxed mb-16 mx-auto">
-            Collaborations, business enquiries and professional connections.
-          </p>
-        </FadeIn>
-
-        <FadeIn immediate delay={0.14}>
-          <form
-            action="#"
-            method="post"
-            className="space-y-6"
-            noValidate
-          >
-            <div>
-              <label htmlFor="name" className="label block mb-2 text-left">
-                Name
-              </label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                required
-                className="w-full px-4 py-3 bg-surface border border-border rounded-md text-text focus:outline-none focus:border-accent transition-colors"
-                placeholder="Your name"
-              />
-            </div>
-            <div>
-              <label htmlFor="email" className="label block mb-2 text-left">
-                Email
-              </label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                required
-                className="w-full px-4 py-3 bg-surface border border-border rounded-md text-text focus:outline-none focus:border-accent transition-colors"
-                placeholder="you@example.com"
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="label block mb-2 text-left">
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={5}
-                required
-                className="w-full px-4 py-3 bg-surface border border-border rounded-md text-text focus:outline-none focus:border-accent transition-colors"
-                placeholder="Tell me about your project or opportunity"
-              />
-            </div>
-            <div className="w-full flex justify-center">
-              <button
-                type="submit"
-                className="inline-flex items-center justify-center px-8 py-3.5 bg-accent text-[#090909] font-semibold rounded-md text-sm uppercase tracking-wider hover:bg-accent-hover transition-colors"
-              >
-                Send message
-              </button>
-            </div>
-          </form>
+          <Suspense fallback={<div className="h-96 rounded-md bg-surface/40 animate-pulse" />}>
+            <ContactForm />
+          </Suspense>
         </FadeIn>
 
         <FadeIn immediate delay={0.2} className="mt-20">

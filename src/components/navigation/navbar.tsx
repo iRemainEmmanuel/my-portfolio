@@ -58,13 +58,14 @@ export function Navbar() {
             href="/"
             className="relative flex min-w-[13rem] items-center font-display font-bold text-text tracking-tight min-h-[2.25rem] sm:min-w-[15rem]"
             onClick={() => setOpen(false)}
-            aria-label="Emmanuel Mwamba — Home"
+            aria-label="Emmanuel Mwamba, Home"
           >
             <motion.span
               layout
-              className="relative inline-flex h-9 w-[13rem] items-center overflow-visible sm:w-[15rem]"
+              className="relative inline-flex h-9 w-[13rem] items-center overflow-hidden sm:w-[15rem]"
             >
               <motion.span
+                initial={{ opacity: 1, x: 0, scale: 1, filter: 'blur(0px)' }}
                 animate={
                   showFullName
                     ? { opacity: 1, x: 0, scale: 1, filter: 'blur(0px)' }
@@ -77,6 +78,7 @@ export function Navbar() {
                 <span className="text-accent">Mwamba</span>
               </motion.span>
               <motion.span
+                initial={{ opacity: 0, x: 0, scale: 1, filter: 'blur(0px)' }}
                 animate={
                   showFullName
                     ? { opacity: 0, x: 18, scale: 0.94, filter: 'blur(4px)' }

@@ -74,7 +74,7 @@ export default function AboutPage() {
           <section className="grid grid-cols-1 lg:grid-cols-[0.72fr_1.28fr] border-t border-border">
             <div className="py-8 lg:pr-10 lg:border-r border-border">
               <p className="label mb-3">Introduction</p>
-              <h2 className="font-display text-3xl sm:text-4xl font-bold text-text">Useful, accessible software</h2>
+              <h2 className="font-display text-3xl sm:text-4xl font-bold text-text">Who I am and what I build</h2>
             </div>
             <div className="py-8 lg:pl-12 space-y-5 border-t lg:border-t-0 border-border">
               <p className="max-w-3xl text-base sm:text-lg text-muted leading-relaxed">
@@ -167,11 +167,11 @@ export default function AboutPage() {
           <section className="border border-border bg-surface p-8 sm:p-10">
             <p className="label mb-3">EICTA Technologies</p>
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-text">Founder &amp; CEO</h2>
-            <p className="mt-2 text-sm text-accent font-semibold">Founded on 23 April 2024 · Ndola, Zambia</p>
+            <p className="mt-2 text-sm text-accent font-semibold">Founded on 23 April 2024.</p>
             <p className="mt-6 max-w-4xl text-base text-muted leading-relaxed">
-              EICTA Technologies is a software development, IT and business solutions business based in Ndola, Zambia. I founded EICTA with a vision of helping businesses make better use of technology through practical software, digital solutions and business support services.
+              EICTA Technologies is a software development, IT and business solutions company based in Ndola, Zambia. I founded EICTA Technologies with a vision of helping businesses make better use of technology through practical software, digital solutions and business support services. 
             </p>
-            <p className="mt-6 text-sm font-semibold text-text">The business focuses on:</p>
+            <p className="mt-6 text-sm font-semibold text-text">The company focuses on:</p>
             <StaggerGroup className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-3 text-sm text-muted">
               {eictaServices.map((service) => (
                 <StaggerItem key={service} y={10} className="flex items-start gap-2">
@@ -221,6 +221,12 @@ export default function AboutPage() {
             </p>
             <p className="mt-5 max-w-4xl text-base sm:text-lg text-muted leading-relaxed">
               I believe the future belongs to people who don&apos;t just identify problems, but are willing to build solutions.
+            </p>
+            <blockquote className="mt-8 max-w-4xl border-l-2 border-accent pl-6 py-2 font-display text-xl sm:text-2xl font-bold text-text/95 leading-relaxed">
+              &ldquo;Your life doesn&rsquo;t improve by waiting for luck; it improves by embracing change. Keep growing, keep creating, and never stop evolving.&rdquo;
+            </blockquote>
+            <p className="mt-3 text-xs font-bold uppercase tracking-widest text-muted text-right">
+              &mdash; Emmanuel Mwamba
             </p>
           </section>
         </FadeIn>

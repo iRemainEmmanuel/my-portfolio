@@ -1,58 +1,51 @@
-# Emmanuel Mwamba — Personal Portfolio
+# Emmanuel Mwamba
 
-A modern, responsive personal portfolio website for **Emmanuel Mwamba**, a Software Developer and Startup Founder focused on building practical digital products and technology solutions that solve real-world problems.
+Personal website and portfolio of **Emmanuel Mwamba**, a Software Developer and Startup Founder based in Ndola, Zambia, focused on building practical digital products and technology solutions that solve real problems.
 
-🌐 **Live Website:** [mwambae.me](https://www.mwambae.me/)
+**Live Website:** [mwambae.vercel.app](https://mwambae.vercel.app/)
 
 ---
 
 ## About
 
-This portfolio showcases my work, technical skills, services, and experience across software development and technology.
+This website presents who I am, the digital products I am building, my areas of expertise, my professional journey, and my participation in Zambia's technology and entrepreneurship ecosystem.
 
-It serves as a central place to explore the projects I have built, the services I offer, and my journey as a developer and founder.
-
-I am also the founder of **EICTA Technologies**, a Software Development, IT & Business Solutions Company.
+I am the founder of **EICTA Technologies**, a Software Development, IT and Business Solutions Company based in Ndola, Zambia, and I am building **ShopLink** (including ShopLink Lite and ShopLink Market).
 
 ---
 
-## What You'll Find
+## Site Sections
 
-* **Projects** — Selected websites, software, and digital products I've worked on.
-* **Services** — Software Development, Web Development, IT Solutions, Business Automation, and Business Registration & Compliance.
-* **About** — My background, experience, technical expertise, and journey.
-* **Contact** — Ways to get in touch for projects, collaborations, and opportunities.
+* **Home (`/`):** Positioning overview, selected work, areas of expertise, latest professional highlights, brief introduction, and contact invitation.
+* **About (`/about`):** Background, problem-solving approach, entrepreneurship mindset, active tech stack, and EICTA Technologies overview.
+* **Work (`/work`):** Dedicated pages for featured products and projects, including ShopLink Lite, ShopLink Market, and Apostle Kim Remuel Ministry Website.
+* **Expertise (`/services/[slug]`):** Dedicated pages for Software Development, Web Development, IT Solutions, Business Automation, and Business Registration & Compliance.
+* **Experience (`/experience`) & Credentials (`/credentials`):** Professional roles, recognition, academic background, and certifications.
+* **Events (`/events` & `/events/[slug]`):** Professional experiences and innovation milestones, including the NDCCI Capacity Building Conference, BongoHive IGNITE RoadShow, and ZICTA ICT Innovation Programme, featuring editorial asymmetric photo galleries and a full-screen lightbox.
+* **Contact (`/contact`):** Project enquiries, collaborations, and social profiles.
+* **Custom 404 (`/not-found`):** Editorial recovery page with direct links across the site.
 
 ---
 
 ## Tech Stack
 
-This portfolio is built with modern frontend technologies:
-
-* **React** — Component-based user interface
-* **Vite** — Fast development and production build tooling
-* **Tailwind CSS** — Utility-first styling
-* **Framer Motion** — Animations and interactive transitions
-* **Heroicons** — Interface icons
-* **JavaScript (ES6+)** — Application logic
+* **Next.js 14 (App Router):** Static generation, dynamic routes, and metadata management
+* **React 18 & TypeScript:** Strongly typed component architecture
+* **Tailwind CSS:** Dark editorial design system and responsive layout
+* **Framer Motion:** Page transitions, scroll-triggered reveals, scroll progress bar, scroll-reactive header, and lightbox animations
+* **Lucide React:** Minimal interface icons
 
 ---
 
 ## Features
 
-* Responsive design across desktop, tablet, and mobile
-* Smooth page transitions and animations
-* Interactive project and service sections
-* Service detail modals
-* Contact form
-* WhatsApp integration
-* SEO-friendly structure
-* Semantic HTML
-* Open Graph and social sharing metadata
-* Custom favicon and site metadata
-* Responsive navigation
-* Scroll-to-top functionality
-* Production-ready build configuration
+* Dark editorial layout designed for desktop, tablet, and mobile
+* Scroll-reactive navigation bar that transitions smoothly from full name (`Emmanuel Mwamba`) to initials (`EM`) on scroll
+* Site-wide Framer Motion animations with automatic `reducedMotion="user"` accessibility support
+* Editorial asymmetric event galleries with a keyboard, click, and touch-swipe enabled full-screen lightbox
+* Dedicated statically generated routes for work items, expertise areas, and events
+* SEO metadata, Open Graph and Twitter/X cards, custom SVG favicon, `robots.txt`, and `sitemap.xml`
+* Separated development (`.next-dev`) and production (`.next`) build directories to prevent cache collisions
 
 ---
 
@@ -60,14 +53,43 @@ This portfolio is built with modern frontend technologies:
 
 ```text
 src/
-├── assets/          # Images and static assets
-├── components/      # Reusable React components
-├── pages/           # Page-level components
-├── App.jsx          # Main application component
-└── main.jsx         # Application entry point
+├── app/
+│   ├── about/
+│   ├── contact/
+│   ├── credentials/
+│   ├── events/
+│   │   └── [slug]/
+│   ├── experience/
+│   ├── services/
+│   │   └── [slug]/
+│   ├── work/
+│   │   ├── apostle-kim-remuel/
+│   │   ├── shoplink-lite/
+│   │   └── shoplink-market/
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── not-found.tsx
+│   ├── page.tsx
+│   └── template.tsx
+├── components/
+│   ├── events/
+│   ├── motion/
+│   ├── navigation/
+│   ├── projects/
+│   ├── sections/
+│   ├── ui/
+│   └── footer.tsx
+├── data/
+│   ├── events.ts
+│   └── projects.ts
+├── lib/
+└── types/
 
 public/
-├── images/          # Public images
+├── images/
+│   ├── events/
+│   └── projects/
+├── favicon.svg
 ├── robots.txt
 └── sitemap.xml
 ```
@@ -78,97 +100,54 @@ public/
 
 ### Prerequisites
 
-Make sure you have the following installed:
-
-* Node.js
+* Node.js 24.x (recommended)
 * npm
 
 ### Installation
 
-Clone the repository:
-
 ```bash
-git clone https://github.com/devmwamba/my-portfolio.git
-```
-
-Navigate into the project:
-
-```bash
+git clone https://github.com/iRemainEmmanuel/my-portfolio.git
 cd my-portfolio
-```
-
-Install dependencies:
-
-```bash
 npm install
 ```
 
-Start the development server:
+### Development
 
 ```bash
 npm run dev
 ```
 
-The application will be available at the local development URL provided by Vite.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
----
-
-## Production Build
-
-To create an optimized production build:
+### Type Checking & Production Build
 
 ```bash
+npx tsc --noEmit
 npm run build
-```
-
-To preview the production build locally:
-
-```bash
-npm run preview
+npm run start
 ```
 
 ---
 
 ## Deployment
 
-The project is configured for modern frontend deployment platforms such as **Vercel**.
+Configured for **Vercel** via `vercel.json` (`framework: "nextjs"`) and `.vercelignore`.
 
-The production website is available at:
-
-**<https://www.mwambae.me/>**
-
----
-
-## SEO
-
-The portfolio includes several SEO-focused implementations, including:
-
-* Semantic HTML structure
-* Appropriate heading hierarchy
-* Meta title and description
-* Open Graph metadata
-* Twitter/X card metadata
-* `robots.txt`
-* `sitemap.xml`
-* Descriptive image alt text
-* Structured data
-* Mobile-responsive design
-
-SEO implementation will continue to evolve alongside the portfolio and its content.
+```bash
+vercel --prod
+```
 
 ---
 
 ## Contact
 
-If you'd like to discuss a project, collaboration, or technology-related opportunity:
-
-**Website:** [mwambae.me](https://www.mwambae.me/)
-**Email:** [mwambaemmanuel005@gmail.com](mailto:mwambaemmanuel005@gmail.com)
-**LinkedIn:** [Emmanuel Mwamba](https://www.linkedin.com/in/emmanuel-mwamba-677186301/)
-**X:** [@EM_GOM_](https://x.com/EM_GOM_)
+* **Website:** [mwambae](https://mwambae.vercel.app/)
+* **Email:** [mwambaemmanuel005@gmail.com](mailto:mwambaemmanuel005@gmail.com)
+* **LinkedIn:** [Emmanuel Mwamba](https://www.linkedin.com/in/emmanuel-mwamba-677186301/)
+* **GitHub:** [@iRemainEmmanuel](https://github.com/iRemainEmmanuel)
+* **X:** [@iRemainEmmanuel](https://x.com/iRemainEmmanuel)
+* **Facebook:** [@iRemainEmmanuel](https://web.facebook.com/iRemainEmmanuel/)
 
 ---
 
-### Built by Emmanuel Mwamba
-
-**Software Developer | Startup Founder | Building Practical Technology Solutions**
+Built by **Emmanuel Mwamba**. Software Developer, Startup Founder, building practical technology solutions.

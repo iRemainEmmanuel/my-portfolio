@@ -65,7 +65,7 @@ export default function ShopLinkLitePage() {
                   My role
                 </h2>
                 <p className="text-sm sm:text-base text-muted leading-relaxed">
-                  Founder and lead developer — concept, product design, development and deployment.
+                  Founder and lead developer: concept, product design, development and deployment.
                 </p>
               </StaggerItem>
             </StaggerGroup>
